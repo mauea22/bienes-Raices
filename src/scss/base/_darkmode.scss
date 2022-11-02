@@ -1,0 +1,16 @@
+.dark-mode {
+    background-color: darken($color: $grisOscuro, $amount: 10);
+
+    p {
+        color: $blanco;
+    }
+
+    a, h1,h2,h3,h4 {
+        color: $gris;
+    }
+
+    .anuncios {
+        background-color: $grisOscuro;
+
+    }
+}
