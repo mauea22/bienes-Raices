@@ -11,6 +11,15 @@
 
     .anuncios {
         background-color: $grisOscuro;
+        border: 1px solid $grisOscuro;
 
+        .precio{
+            color: $verde;
+        }
+
+        .icono{
+            
+            filter: invert(100%);
+        }
     }
 }
