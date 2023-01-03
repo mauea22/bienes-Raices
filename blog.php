@@ -1,46 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="/build/css/app.css">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="/build/img/logo.svg" alt="logotipo de bienes raices">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="/build//img/barras.svg" alt="icono menu resposnsive">
-                </div>
-
-                <div class="derecha">
-                    <img src="/build/img/dark-mode.svg" alt="" class="dark-mode-boton"/>
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php
+    include '../bienesraices/includes/templates/header.php';
+?>
 
     <main class="contenedor seccion contenido-centrado">
         <h1> Nuestro Blog</h1>
 
         <article class="entrada-blog">
             <div class="imagen">
-                <picture srcest="/build/img/blog1.webp" type="image/webp"></picture>
-                <picture srcest="/build/img/blog1.jpg" type="image/jpeg"></picture>
-                <img src="/build/img/blog1.jpg" alt="entreda de blog" loading="lazy">
+                <picture srcest="../bienesraices/build/img/blog1.webp" type="image/webp"></picture>
+                <picture srcest="../bienesraices/build/img/blog1.jpg" type="image/jpeg"></picture>
+                <img src="../bienesraices/build/img/blog1.jpg" alt="entreda de blog" loading="lazy">
             </div>
             <div class="texto-entrada">
                 <a href="entrada.html">
@@ -54,9 +23,9 @@
 
         <article class="entrada-blog">
             <div class="imagen">
-                <picture srcest="/build/img/blog2.webp" type="image/webp"></picture>
-                <picture srcest="/build/img/blog2.jpg" type="image/jpeg"></picture>
-                <img src="/build/img/blog2.jpg" alt="entreda de blog" loading="lazy">
+                <picture srcest="../bienesraices/build/img/blog2.webp" type="image/webp"></picture>
+                <picture srcest="../bienesraices/build/img/blog2.jpg" type="image/jpeg"></picture>
+                <img src="../bienesraices/build/img/blog2.jpg" alt="entreda de blog" loading="lazy">
             </div>
             <div class="texto-entrada">
                 <a href="entrada.html">
@@ -68,9 +37,9 @@
         </article>
         <article class="entrada-blog">
             <div class="imagen">
-                <picture srcest="/build/img/blog3.webp" type="image/webp"></picture>
-                <picture srcest="/build/img/blog3.jpg" type="image/jpeg"></picture>
-                <img src="/build/img/blog3.jpg" alt="entreda de blog" loading="lazy">
+                <picture srcest="../bienesraices/build/img/blog3.webp" type="image/webp"></picture>
+                <picture srcest="../bienesraices/build/img/blog3.jpg" type="image/jpeg"></picture>
+                <img src="../bienesraices/build/img/blog3.jpg" alt="entreda de blog" loading="lazy">
             </div>
             <div class="texto-entrada">
                 <a href="entrada.html">
@@ -84,9 +53,9 @@
 
         <article class="entrada-blog">
             <div class="imagen">
-                <picture srcest="/build/img/blog4.webp" type="image/webp"></picture>
-                <picture srcest="/build/img/blog4.jpg" type="image/jpeg"></picture>
-                <img src="/build/img/blog4.jpg" alt="entreda de blog" loading="lazy">
+                <picture srcest="../bienesraices/build/img/blog4.webp" type="image/webp"></picture>
+                <picture srcest="../bienesraices/build/img/blog4.jpg" type="image/jpeg"></picture>
+                <img src="../bienesraices/build/img/blog4.jpg" alt="entreda de blog" loading="lazy">
             </div>
             <div class="texto-entrada">
                 <a href="entrada.html">
@@ -98,18 +67,10 @@
         </article>
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos Reservados 2022 &copy; </p>
-    </footer>
+    <?php
+        include './includes/templates/footer.php'
+    ?>
 
-    <script src="/build/js/bundle.min.js"></script>
+    <script src="../bienesraices/build/js/bundle.min.js"></script>
 </body>
 </html>

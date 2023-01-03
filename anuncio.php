@@ -1,45 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="/build/css/app.css">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="/build/img/logo.svg" alt="logotipo de bienes raices">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="/build//img/barras.svg" alt="icono menu resposnsive">
-                </div>
-
-                <div class="derecha">
-                    <img src="/build/img/dark-mode.svg" alt="" class="dark-mode-boton"/>
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php
+    include '../bienesraices/includes/templates/header.php';
+?>
 
     <main class="contenedor seccion contenido-centrado">
         <h1>Casa en Venta frente al Bosque</h1>
 
         <picture>
-            <source srcset="build/img/destacada.webp" type="image/webp">
-            <source srcset="build/img/destacada.jpg" type="image/jepg">
-            <img src="build/img/destacada.webp" alt="imagen de la propiedad">
+            <source srcset="../bienesraices/build/img/destacada.webp" type="image/webp">
+            <source srcset="../bienesraices/build/img/destacada.jpg" type="image/jepg">
+            <img src="../bienesraices/build/img/destacada.webp" alt="imagen de la propiedad">
         </picture>
 
         <div class="resumen-propiedad">
@@ -47,15 +16,15 @@
 
             <ul class="iconos-caracteristicas">
                 <li>
-                    <img class="icono" src="/build/img/icono_wc.svg" alt="icono wc" loading="lazy">
+                    <img class="icono" src="../bienesraices/build/img/icono_wc.svg" alt="icono wc" loading="lazy">
                     <p>3</p>
                 </li>
                 <li>
-                    <img class="icono" src="/build/img/icono_estacionamiento.svg" alt="icono estacionamiento" loading="lazy">
+                    <img class="icono" src="../bienesraices/build/img/icono_estacionamiento.svg" alt="icono estacionamiento" loading="lazy">
                     <p>2</p>
                 </li>
                 <li>
-                    <img class="icono" src="/build/img/icono_dormitorio.svg" alt="icono habitaciones" loading="lazy">
+                    <img class="icono" src="../bienesraices/build/img/icono_dormitorio.svg" alt="icono habitaciones" loading="lazy">
                     <p>4</p>
                 </li>
             </ul>
@@ -65,18 +34,10 @@
         </div>
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos Reservados 2022 &copy; </p>
-    </footer>
+    <?php
+        include './includes/templates/footer.php'
+    ?>
 
-    <script src="/build/js/bundle.min.js"></script>
+    <script src="../bienesraices/build/js/bundle.min.js"></script>
 </body>
 </html>

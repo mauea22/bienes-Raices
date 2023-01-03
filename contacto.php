@@ -1,44 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="/build/css/app.css">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="/build/img/logo.svg" alt="logotipo de bienes raices">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="/build//img/barras.svg" alt="icono menu resposnsive">
-                </div>
-
-                <div class="derecha">
-                    <img src="/build/img/dark-mode.svg" alt="" class="dark-mode-boton"/>
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php
+    include '../bienesraices/includes/templates/header.php';
+?>
 
     <main class="contenedor seccion">
         <h1>Contacto</h1>
         <picture>
-            <source srcset="/build/img/destacada3.webp" type="image/webp">
-            <source srcset="/build/img/destacada3.jpg" type="image/jepg">
-            <img src="/build/img/destacada3.jpg" alt="imagen de contacto">
+            <source srcset="../bienesraices/build/img/destacada3.webp" type="image/webp">
+            <source srcset="../bienesraices/build/img/destacada3.jpg" type="image/jepg">
+            <img src="../bienesraices/build/img/destacada3.jpg" alt="imagen de contacto">
         </picture>
 
         <h3>Llene el Formulario de Contácto</h3>
@@ -98,18 +67,10 @@
         </form>
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos Reservados 2022 &copy; </p>
-    </footer>
+    <?php
+        include './includes/templates/footer.php'
+    ?>
 
-    <script src="/build/js/bundle.min.js"></script>
+    <script src="../bienesraices/build/js/bundle.min.js"></script>
 </body>
 </html>
