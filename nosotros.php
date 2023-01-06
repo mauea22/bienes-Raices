@@ -46,7 +46,7 @@
     </section>
 
     <?php
-        include './includes/templates/footer.php'
+        include './includes/templates/footer.php';
     ?>
 
     <script src="../bienesraices/build/js/bundle.min.js"></script>

@@ -1,6 +1,6 @@
 <?php
     $inicio = true;
-    include './includes/templates/header.php';
+    include '../bienesraices/includes/templates/header.php';
 ?>
 
 <main class="contenedor seccion">
@@ -172,7 +172,7 @@
     </div>
 
     <?php
-        include './includes/templates/footer.php'
+        include './includes/templates/footer.php';
     ?>
 
     <script src="../bienesraices/build/js/bundle.min.js"></script>
